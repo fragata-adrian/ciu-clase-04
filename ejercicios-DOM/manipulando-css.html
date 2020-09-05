@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Manipulando CSS</title>
+        <link rel="stylesheet" href="manipulando-css-style.css" type="text/css">
+    </head>
+
+    <body>
+        <div>
+            <h3>Vengo a ser el titulo de lo que esta abajo.</h3>
+
+            <p>
+                Hola esto pretende ser un parrafo...
+            </p>
+        </div>
+
+        <script>
+            var $div = document.querySelector('div');
+            
+            //$div.style.background = 'gray';
+            //$div.style.width = '200px';
+            //$div.style.height = '100px';
+
+            $div.classList.add("square");
+            
+            setInterval($div.classList.toggle("square"), 1000);
+        </script>
+    </body>
+</html>

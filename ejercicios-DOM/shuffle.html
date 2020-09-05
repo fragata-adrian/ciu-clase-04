@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Shuffle!</title>
+    </head>
+
+    <body>
+        <div id='source'>
+            Esto es el origen...
+        </div>
+
+        <div id='destination'>
+            Y esto el destino :)
+        </div>
+
+        <script>
+            var $source = document.querySelector("#source");
+            
+            document.querySelector('#destination').textContent = $source.textContent
+        </script>
+    </body>
+</html>
